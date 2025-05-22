@@ -40,14 +40,16 @@ jobs:
         cd src
         python main.py
     
-    - name: Set up push authentication
-      run: |
-        git config --global user.name 'kcxain'
-        git config --global user.email 'kcxain@gmail.com'
-        git remote set-url origin https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/${{ github.repository }}.git
-    
-    - name: Commit and push changes
-      run: |
-        git add .
-        git commit -m "Update paper analysis for $(date +'%Y-%m-%d')" || echo "No changes to commit"
-        git push 
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v5
+      with:
+        token: ${{ secrets.GH_TOKEN }}
+        commit-message: "Update paper analysis $(date +'%Y-%m-%d')"
+        title: "Update paper analysis"
+        body: |
+          自动更新论文分析结果
+          - 更新 archive 目录
+          - 更新 README.md
+        branch: auto-paper-analysis
+        base: main
+        delete-branch: true

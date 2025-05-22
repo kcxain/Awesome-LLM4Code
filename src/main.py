@@ -23,7 +23,7 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 logger = logging.getLogger(__name__)
 
 # 配置
-DEEPSEEK_API_KEY = os.getenv("DEEPSEEK_API_KEY")
+KIMI_API_KEY = os.getenv("KIMI_API_KEY")
 
 PAPERS_DIR = Path("./papers")
 CONCLUSION_FILE = Path("./conclusion.md")
@@ -47,8 +47,8 @@ KEYWORDS = [
 MAX_PAPERS = 1  # 设置为1以便快速测试
 
 # 配置OpenAI API用于DeepSeek
-openai.api_key = DEEPSEEK_API_KEY
-openai.api_base = "https://api.deepseek.com"
+openai.api_key = KIMI_API_KEY
+openai.api_base = "https://api.moonshot.cn/v1"
 
 # 如果不存在论文目录则创建
 PAPERS_DIR.mkdir(exist_ok=True)
@@ -101,17 +101,13 @@ def download_paper(paper, output_dir):
         logger.error(f"下载论文失败 {paper.title}: {str(e)}")
         return None
 
-def analyze_paper_with_deepseek(pdf_path, paper):
-    """使用DeepSeek API分析论文（使用OpenAI 0.28.0兼容格式）"""
+def analyze_paper(pdf_path, paper):
     try:
         # 从Author对象中提取作者名
         author_names = [author.name for author in paper.authors]
         
         prompt = f"""
         论文标题: {paper.title}
-        作者: {', '.join(author_names)}
-        类别: {', '.join(paper.categories)}
-        发布时间: {paper.published}
         
         请分析这篇研究论文并提供：
         1. 简明摘要
@@ -123,12 +119,30 @@ def analyze_paper_with_deepseek(pdf_path, paper):
         
         请使用中文回答，并以纯文本，分自然段格式输出。
         """
-        
         logger.info(f"正在分析论文: {paper.title}")
-        response = openai.ChatCompletion.create(
-            model="deepseek-chat",
+        client = openai.OpenAI(
+            api_key=KIMI_API_KEY,
+            base_url="https://api.moonshot.cn/v1",
+        )
+        # moonshot.pdf 是一个示例文件, 我们支持文本文件和图片文件，对于图片文件，我们提供了 OCR 的能力
+        # 上传文件时，我们可以直接使用 openai 库的文件上传 API，使用标准库 pathlib 中的 Path 构造文件
+        # 对象，并将其传入 file 参数即可，同时将 purpose 参数设置为 file-extract；注意，目前文件上传
+        # 接口仅支持 file-extract 一种 purpose 值。
+        file_object = client.files.create(file=pdf_path, purpose="file-extract")
+        
+        # 获取结果
+        # file_content = client.files.retrieve_content(file_id=file_object.id)
+        # 注意，某些旧版本示例中的 retrieve_content API 在最新版本标记了 warning, 可以用下面这行代替
+        # （如果使用旧版本的 SDK，可以继续延用 retrieve_content API）
+        file_content = client.files.content(file_id=file_object.id).text
+        response = client.chat.completions.create(
+            model="moonshot-v1-8k",
             messages=[
                 {"role": "system", "content": "你是一位专门总结和分析学术论文的研究助手。请使用中文回复。"},
+                {
+                    "role": "system",
+                    "content": file_content, # <-- 这里，我们将抽取后的文件内容（注意是文件内容，而不是文件 ID）放置在请求中
+                },
                 {"role": "user", "content": prompt},
             ]
         )
@@ -232,7 +246,7 @@ def main():
             time.sleep(2)
             
             # 分析论文
-            analysis = analyze_paper_with_deepseek(pdf_path, paper)
+            analysis = analyze_paper(pdf_path, paper)
             papers_analyses.append((paper, analysis))
             
             # 分析完成后删除PDF文件
