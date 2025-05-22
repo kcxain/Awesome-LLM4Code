@@ -4,7 +4,7 @@ import os
 import arxiv
 import datetime
 from pathlib import Path
-import openai
+from openai import OpenAI
 import time
 import logging
 import sys
@@ -46,9 +46,6 @@ KEYWORDS = [
 ]
 MAX_PAPERS = 1  # 设置为1以便快速测试
 
-# 配置OpenAI API用于DeepSeek
-openai.api_key = KIMI_API_KEY
-openai.api_base = "https://api.moonshot.cn/v1"
 
 # 如果不存在论文目录则创建
 PAPERS_DIR.mkdir(exist_ok=True)
@@ -120,7 +117,7 @@ def analyze_paper(pdf_path, paper):
         请使用中文回答，并以纯文本，分自然段格式输出。
         """
         logger.info(f"正在分析论文: {paper.title}")
-        client = openai.OpenAI(
+        client = OpenAI(
             api_key=KIMI_API_KEY,
             base_url="https://api.moonshot.cn/v1",
         )
