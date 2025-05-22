@@ -126,16 +126,34 @@ def analyze_paper(pdf_path, paper):
         # 注意，某些旧版本示例中的 retrieve_content API 在最新版本标记了 warning, 可以用下面这行代替
         # （如果使用旧版本的 SDK，可以继续延用 retrieve_content API）
         file_content = client.files.content(file_id=file_object.id).text
+        # 计算token数并在需要时截断
+        system_msg = "你是一位专门总结和分析学术论文的研究助手。请使用中文回复。"
+        messages = [{"role": "system", "content": system_msg}]
+        
+        # 估算token数 (粗略估计:中文字符2个token,英文单词1个token)
+        def estimate_tokens(text):
+            chinese_chars = sum(1 for c in text if '\u4e00' <= c <= '\u9fff')
+            other_chars = len(text) - chinese_chars
+            return chinese_chars * 2 + other_chars
+            
+        file_tokens = estimate_tokens(file_content)
+        prompt_tokens = estimate_tokens(prompt)
+        system_tokens = estimate_tokens(system_msg)
+        
+        total_tokens = file_tokens + prompt_tokens + system_tokens
+        
+        if total_tokens > 4096:
+            # 截断file_content以适应token限制
+            max_file_tokens = 4096 - prompt_tokens - system_tokens
+            truncated_content = file_content[:int(max_file_tokens/2)]  # 粗略截断
+            messages.append({"role": "system", "content": truncated_content})
+        else:
+            messages.append({"role": "system", "content": file_content})
+            
+        messages.append({"role": "user", "content": prompt})
         response = client.chat.completions.create(
             model="moonshot-v1-8k",
-            messages=[
-                {"role": "system", "content": "你是一位专门总结和分析学术论文的研究助手。请使用中文回复。"},
-                {
-                    "role": "system",
-                    "content": file_content, # <-- 这里，我们将抽取后的文件内容（注意是文件内容，而不是文件 ID）放置在请求中
-                },
-                {"role": "user", "content": prompt},
-            ]
+            messages=messages
         )
         
         analysis = response.choices[0].message.content
