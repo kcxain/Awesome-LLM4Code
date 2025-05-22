@@ -41,7 +41,7 @@ KEYWORDS = [
     "HDL",
     "verilog"
 ]
-MAX_PAPERS = 1  # 设置为1以便快速测试
+MAX_PAPERS = 20  # 设置为1以便快速测试
 
 
 # 如果不存在论文目录则创建
@@ -97,18 +97,17 @@ def download_paper(paper, output_dir):
 def analyze_paper(pdf_path, paper):
     try:
         
-        prompt = f"""
+        prompt = f"""\
         论文标题: {paper.title}
         
         请分析这篇研究论文并提供：
-        1. 简明摘要
+        1. 摘要翻译
         2. 主要贡献和创新点，解决的什么问题
         3. 研究方法，具体采用的技术，工具，数据集
         4. 实验结果，包括数据集，实验设置，实验结果，实验结论
-        5. 局限性或未来工作方向
-        6. 论文的方法可以用在其它什么领域？（如 Verilog 代码生成，思维链）？
+        5. 方法可以用在其它什么领域（如 Verilog 代码生成，思维链）？
         
-        请使用中文回答，并以纯文本，分自然段格式输出。
+        请使用中文回答，并以纯文本，分自然段格式输出
         """
         logger.info(f"正在分析论文: {paper.title}")
         client = OpenAI(
@@ -209,7 +208,7 @@ def write_to_conclusion(papers_analyses):
             with open(readme_path, 'a', encoding='utf-8') as readme:
                 readme.write(ym_title)
         # 插入本次分析列表
-        list_title = f"\n\n### {start_date[5:]}-{end_date[5:]}\n"
+        list_title = f"### {start_date[5:]}-{end_date[5:]}\n"
         with open(readme_path, 'a', encoding='utf-8') as readme:
             readme.write(list_title)
             for link in links:
