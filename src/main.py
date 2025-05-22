@@ -172,7 +172,21 @@ def write_to_conclusion(papers_analyses):
     # 在上一级readme.md中插入/追加列表
     readme_path = Path("../README.md")
     if links:
-        list_title = f"\n\n### {start_date} - {end_date}\n\n"
+        # 年-月标题
+        year_month = today.strftime('%Y-%m')
+        ym_title = f"\n\n## {year_month} \n"
+        # 读取现有readme内容
+        if readme_path.exists():
+            with open(readme_path, 'r', encoding='utf-8') as readme:
+                readme_content = readme.read()
+        else:
+            readme_content = ''
+        # 如果没有年-月标题则插入
+        if ym_title.strip() not in readme_content:
+            with open(readme_path, 'a', encoding='utf-8') as readme:
+                readme.write(ym_title)
+        # 插入本次分析列表
+        list_title = f"\n\n### {start_date} - {end_date}\n"
         with open(readme_path, 'a', encoding='utf-8') as readme:
             readme.write(list_title)
             for link in links:
