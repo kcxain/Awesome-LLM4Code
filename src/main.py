@@ -177,12 +177,12 @@ def write_to_conclusion(papers_analyses):
     # 生成markdown内容并收集标题
     links = []
     with open(conclusion_file, 'a', encoding='utf-8') as f:
-        f.write(f"\n## LLM4Code: {start_date}-{end_date}\n")
+        f.write(f"\n## LLM4Code: {start_date}-{end_date}\n\n")
         for paper, analysis in papers_analyses:
             author_names = [author.name for author in paper.authors]
-            f.write(f"### {paper.title}\n")
-            f.write(f"**作者**: {', '.join(author_names)}\n")
-            f.write(f"**日期**: {paper.published.strftime('%Y-%m-%d')}\n")
+            f.write(f"### {paper.title}\n\n")
+            f.write(f"**作者**: {', '.join(author_names)}\n\n")
+            f.write(f"**日期**: {paper.published.strftime('%Y-%m-%d')}\n\n")
             f.write(f"**链接**: {paper.entry_id}\n\n")
             f.write(f"{analysis}\n\n")
             f.write("---\n\n")
@@ -197,7 +197,7 @@ def write_to_conclusion(papers_analyses):
     if links:
         # 年-月标题
         year_month = today.strftime('%Y-%m')
-        ym_title = f"\n\n## {year_month} \n"
+        ym_title = f"\n\n## {year_month} \n\n"
         # 读取现有readme内容
         if readme_path.exists():
             with open(readme_path, 'r', encoding='utf-8') as readme:
@@ -209,7 +209,7 @@ def write_to_conclusion(papers_analyses):
             with open(readme_path, 'a', encoding='utf-8') as readme:
                 readme.write(ym_title)
         # 插入本次分析列表
-        list_title = f"### {start_date[5:]}-{end_date[5:]}\n"
+        list_title = f"### {start_date[5:]}-{end_date[5:]}\n\n"
         with open(readme_path, 'a', encoding='utf-8') as readme:
             readme.write(list_title)
             for link in links:
