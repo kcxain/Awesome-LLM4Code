@@ -42,12 +42,13 @@ jobs:
       run: |
         cd src
         python main.py
-    
+    - name: Set current date as env variable
+      run: echo "NOW=$(date +'%Y-%m-%d')" >> "$GITHUB_ENV"
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v5
       with:
         token: ${{ secrets.GH_TOKEN }}
-        commit-message: "Update paper analysis $(date +'%Y-%m-%d')"
+        commit-message: "Update paper analysis $NOW"
         title: "Update paper analysis"
         body: |
           自动更新论文分析结果
