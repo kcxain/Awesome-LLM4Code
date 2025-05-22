@@ -177,7 +177,6 @@ def write_to_conclusion(papers_analyses):
     # 生成markdown内容并收集标题
     links = []
     with open(conclusion_file, 'a', encoding='utf-8') as f:
-        f.write(f"\n## LLM4Code: {start_date}-{end_date}\n\n")
         for paper, analysis in papers_analyses:
             author_names = [author.name for author in paper.authors]
             f.write(f"### {paper.title}\n\n")
