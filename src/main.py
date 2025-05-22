@@ -8,11 +8,7 @@ from openai import OpenAI
 import time
 import logging
 import sys
-import smtplib
-from email.mime.text import MIMEText
-from email.mime.multipart import MIMEMultipart
 from dotenv import load_dotenv
-import calendar
 
 # 加载环境变量
 load_dotenv()
@@ -28,7 +24,6 @@ os.environ["OPENAI_API_KEY"] = KIMI_API_KEY
 os.environ["OPENAI_API_BASE"] = "https://api.moonshot.cn/v1"
 
 PAPERS_DIR = Path("./papers")
-CONCLUSION_FILE = Path("./conclusion.md")
 CATEGORIES = [
     "cs.SE",
     "cs.PL",
@@ -52,7 +47,6 @@ MAX_PAPERS = 1  # 设置为1以便快速测试
 # 如果不存在论文目录则创建
 PAPERS_DIR.mkdir(exist_ok=True)
 logger.info(f"论文将保存在: {PAPERS_DIR.absolute()}")
-logger.info(f"分析结果将写入: {CONCLUSION_FILE.absolute()}")
 
 def get_recent_papers(categories, max_results=MAX_PAPERS, keywords=KEYWORDS):
     """获取最近7天内发布且包含关键词的指定类别论文（直接在arxiv query中检索关键词）"""
@@ -102,8 +96,6 @@ def download_paper(paper, output_dir):
 
 def analyze_paper(pdf_path, paper):
     try:
-        # 从Author对象中提取作者名
-        author_names = [author.name for author in paper.authors]
         
         prompt = f"""
         论文标题: {paper.title}
@@ -161,18 +153,18 @@ def write_to_conclusion(papers_analyses):
     archive_dir.mkdir(parents=True, exist_ok=True)
     md_filename = today.strftime('%m%d') + ".md"
     conclusion_file = archive_dir / md_filename
-    date_str = today.strftime('%Y-%m-%d')
-    start_date = (today - datetime.timedelta(days=7)).strftime('%Y-%m-%d')
+    date_str = today.strftime('%Y-%m%d')
+    start_date = (today - datetime.timedelta(days=7)).strftime('%Y-%m%d')
     end_date = date_str
     # 生成markdown内容并收集标题
     links = []
     with open(conclusion_file, 'a', encoding='utf-8') as f:
-        f.write(f"\n\n## LLM4Code: {start_date} - {end_date}\n\n")
+        f.write(f"\n## LLM4Code: {start_date}-{end_date}\n")
         for paper, analysis in papers_analyses:
             author_names = [author.name for author in paper.authors]
             f.write(f"### {paper.title}\n")
             f.write(f"**作者**: {', '.join(author_names)}\n")
-            f.write(f"**发布日期**: {paper.published.strftime('%Y-%m-%d')}\n")
+            f.write(f"**日期**: {paper.published.strftime('%Y-%m-%d')}\n")
             f.write(f"**链接**: {paper.entry_id}\n\n")
             f.write(f"{analysis}\n\n")
             f.write("---\n\n")
@@ -199,7 +191,7 @@ def write_to_conclusion(papers_analyses):
             with open(readme_path, 'a', encoding='utf-8') as readme:
                 readme.write(ym_title)
         # 插入本次分析列表
-        list_title = f"\n\n### {start_date} - {end_date}\n"
+        list_title = f"\n\n### {start_date[5:]}-{end_date[5:]}\n"
         with open(readme_path, 'a', encoding='utf-8') as readme:
             readme.write(list_title)
             for link in links:
@@ -256,7 +248,6 @@ def main():
     
     
     logger.info("ArXiv论文追踪和分析完成")
-    logger.info(f"结果已保存至 {CONCLUSION_FILE.absolute()}")
 
 if __name__ == "__main__":
     main()
