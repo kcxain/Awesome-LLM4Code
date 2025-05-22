@@ -33,7 +33,10 @@ CATEGORIES = [
 ]
 
 KEYWORDS = [
-    "code",
+    "code generation",
+    "code repair",
+    "code translation",
+    "unit test",
     "coder",
     "speculative decoding", 
     "program",
