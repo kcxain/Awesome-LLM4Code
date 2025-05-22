@@ -36,11 +36,11 @@ CATEGORIES = [
 ]
 
 KEYWORDS = [
-    " code ",
-    " coder ",
+    "code",
+    "coder",
     "speculative decoding", 
-    " program ",
-    " programer ",
+    "program",
+    "programer",
     "HDL",
     "verilog"
 ]

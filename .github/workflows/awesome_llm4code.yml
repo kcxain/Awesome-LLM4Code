@@ -40,10 +40,14 @@ jobs:
         cd src
         python main.py
     
-    - name: Commit and push changes
+    - name: Set up push authentication
       run: |
         git config --global user.name 'kcxain'
         git config --global user.email 'kcxain@gmail.com'
+        git remote set-url origin https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/${{ github.repository }}.git
+    
+    - name: Commit and push changes
+      run: |
         git add .
         git commit -m "Update paper analysis for $(date +'%Y-%m-%d')" || echo "No changes to commit"
         git push 
