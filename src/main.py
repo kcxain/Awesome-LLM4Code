@@ -36,9 +36,11 @@ CATEGORIES = [
 ]
 
 KEYWORDS = [
-    "code", 
+    " code ",
+    " coder ",
     "speculative decoding", 
-    "program synthesis",
+    " program ",
+    " programer ",
     "HDL",
     "verilog"
 ]
@@ -53,31 +55,30 @@ PAPERS_DIR.mkdir(exist_ok=True)
 logger.info(f"论文将保存在: {PAPERS_DIR.absolute()}")
 logger.info(f"分析结果将写入: {CONCLUSION_FILE.absolute()}")
 
-def get_recent_papers(categories, max_results=MAX_PAPERS):
-    """获取最近7天内发布的指定类别的论文"""
-    # 计算最近7天的日期范围
+def get_recent_papers(categories, max_results=MAX_PAPERS, keywords=KEYWORDS):
+    """获取最近7天内发布且包含关键词的指定类别论文（直接在arxiv query中检索关键词）"""
     today = datetime.datetime.now()
     seven_days_ago = today - datetime.timedelta(days=7)
-    
-    # 格式化ArXiv查询的日期
     start_date = seven_days_ago.strftime('%Y%m%d')
     end_date = today.strftime('%Y%m%d')
-    
-    # 创建查询字符串，搜索最近7天内发布的指定类别的论文
+
+    # 类别部分
     category_query = " OR ".join([f"cat:{cat}" for cat in categories])
     date_range = f"submittedDate:[{start_date}000000 TO {end_date}235959]"
-    query = f"({category_query}) AND {date_range}"
-    
+
+    # 关键词部分，支持title/abstract字段
+    keyword_query = " OR ".join([f"ti:\"{kw}\" OR abs:\"{kw}\"" for kw in keywords])
+
+    # 综合query
+    query = f"(({category_query}) AND {date_range} AND ({keyword_query}))"
     logger.info(f"正在搜索论文，查询条件: {query}")
-    
-    # 搜索ArXiv
+
     search = arxiv.Search(
         query=query,
         max_results=max_results,
         sort_by=arxiv.SortCriterion.SubmittedDate,
         sort_order=arxiv.SortOrder.Descending
     )
-    
     results = list(search.results())
     logger.info(f"找到{len(results)}篇符合条件的论文")
     return results
@@ -200,18 +201,11 @@ def filter_papers_by_keywords(papers, keywords=KEYWORDS):
 
 def main():
     logger.info("开始ArXiv论文跟踪")
-    
-    # 获取最近5天的论文
-    papers = get_recent_papers(CATEGORIES, MAX_PAPERS)
-    logger.info(f"从最近5天找到{len(papers)}篇论文")
-    
+    papers = get_recent_papers(CATEGORIES, MAX_PAPERS, KEYWORDS)
+    logger.info(f"最终筛选后剩余{len(papers)}篇论文")
     if not papers:
         logger.info("所选时间段没有找到论文。退出。")
         return
-    
-    # 新增：按关键词过滤
-    papers = filter_papers_by_keywords(papers)
-    logger.info(f"关键词过滤后剩余{len(papers)}篇论文")
     
     # 处理每篇论文
     papers_analyses = []
