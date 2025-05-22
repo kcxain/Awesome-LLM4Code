@@ -44,7 +44,7 @@ KEYWORDS = [
     "HDL",
     "verilog"
 ]
-MAX_PAPERS = 50  # 设置为1以便快速测试
+MAX_PAPERS = 1  # 设置为1以便快速测试
 
 # 配置OpenAI API用于DeepSeek
 openai.api_key = DEEPSEEK_API_KEY
