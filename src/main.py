@@ -141,9 +141,9 @@ def analyze_paper(pdf_path, paper):
         
         total_tokens = file_tokens + prompt_tokens + system_tokens
         
-        if total_tokens > 4096:
+        if total_tokens > 24576:
             # 截断file_content以适应token限制
-            max_file_tokens = 4096 - prompt_tokens - system_tokens
+            max_file_tokens = 24576 - prompt_tokens - system_tokens
             truncated_content = file_content[:int(max_file_tokens/2)]  # 粗略截断
             messages.append({"role": "system", "content": truncated_content})
         else:
@@ -151,8 +151,9 @@ def analyze_paper(pdf_path, paper):
             
         messages.append({"role": "user", "content": prompt})
         response = client.chat.completions.create(
-            model="moonshot-v1-8k",
-            messages=messages
+            model="moonshot-v1-32k",
+            messages=messages,
+            temperature = 0.3
         )
         
         analysis = response.choices[0].message.content
