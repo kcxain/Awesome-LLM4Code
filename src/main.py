@@ -24,6 +24,8 @@ logger = logging.getLogger(__name__)
 
 # 配置
 KIMI_API_KEY = os.getenv("KIMI_API_KEY")
+os.environ["OPENAI_API_KEY"] = KIMI_API_KEY
+os.environ["OPENAI_API_BASE"] = "https://api.moonshot.cn/v1"
 
 PAPERS_DIR = Path("./papers")
 CONCLUSION_FILE = Path("./conclusion.md")
