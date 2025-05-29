@@ -25,9 +25,6 @@ os.environ["OPENAI_API_BASE"] = "https://api.moonshot.cn/v1"
 
 PAPERS_DIR = Path("./papers")
 CATEGORIES = [
-    "cs.SE",
-    "cs.PL",
-    "cs.LG",
     "cs.AI",
     "cs.CL",
 ]
