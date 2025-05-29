@@ -212,14 +212,7 @@ def write_to_conclusion(papers_analyses):
         if ym_title.strip() in readme_content:
             # 找到年月标题的位置
             title_pos = readme_content.find(ym_title.strip())
-            # 找到下一个标题的位置（如果存在）
-            next_title_pos = readme_content.find('\n##', title_pos + len(ym_title))
-            if next_title_pos == -1:  # 如果没有下一个标题
-                # 在年月标题后面追加内容
-                readme_content = readme_content[:title_pos + len(ym_title)] + new_content + readme_content[title_pos + len(ym_title):]
-            else:
-                # 在年月标题和下一个标题之间插入内容
-                readme_content = readme_content[:title_pos + len(ym_title)] + new_content + readme_content[next_title_pos:]
+            readme_content = readme_content[:title_pos + len(ym_title)] + new_content + readme_content[title_pos + len(ym_title):]
         else:
             # 如果没有年月标题则插入到开头
             readme_content = ym_title + new_content + readme_content
