@@ -2,7 +2,7 @@ name: Awesome-LLM4Code
 
 on:
   schedule:
-    - cron: '0 0 * * 4'  # 每周四 UTC 时间 00:00 运行
+    - cron: '0 16 * * 3'  # 每周三 UTC 时间 16:00 运行 (中国周四 00:00)
   workflow_dispatch:  # 允许手动触发
 permissions:
   contents: write

@@ -206,16 +206,20 @@ def write_to_conclusion(papers_analyses):
                 readme_content = readme.read()
         else:
             readme_content = ''
-        # 如果没有年-月标题则插入
-        if ym_title.strip() not in readme_content:
-            with open(readme_path, 'a', encoding='utf-8') as readme:
-                readme.write(ym_title)
-        # 插入本次分析列表
+            
+        # 准备新内容
         list_title = f"### {start_date[5:]}-{end_date[5:]}\n\n"
-        with open(readme_path, 'a', encoding='utf-8') as readme:
-            readme.write(list_title)
-            for link in links:
-                readme.write(link + "\n")
+        new_content = list_title
+        for link in links:
+            new_content += link + "\n"
+            
+        # 如果没有年-月标题则插入到开头
+        if ym_title.strip() not in readme_content:
+            new_content = ym_title + new_content
+            
+        # 将新内容插入到文件开头
+        with open(readme_path, 'w', encoding='utf-8') as readme:
+            readme.write(new_content + readme_content)
 
 def delete_pdf(pdf_path):
     """删除PDF文件"""
