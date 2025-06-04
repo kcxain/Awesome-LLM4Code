@@ -39,7 +39,7 @@ KEYWORDS = [
     "HDL",
     "verilog"
 ]
-MAX_PAPERS = 20  # 设置为1以便快速测试
+MAX_PAPERS = 50  # 设置为1以便快速测试
 
 
 # 如果不存在论文目录则创建
@@ -202,7 +202,8 @@ def write_to_conclusion(papers_analyses):
                 readme_content = readme.read()
         else:
             readme_content = ''
-            
+        # 去除第一行大标题 # Awesome-LLM4Code
+        readme_content = readme_content.split('\n')[1:]
         # 准备新内容
         list_title = f"### {start_date[5:]}-{end_date[5:]}\n\n"
         new_content = list_title
@@ -220,7 +221,7 @@ def write_to_conclusion(papers_analyses):
             
         # 写入更新后的内容
         with open(readme_path, 'w', encoding='utf-8') as readme:
-            readme.write(readme_content)
+            readme.write("# Awesome-LLM4Code\n\n" + readme_content)
 
 def delete_pdf(pdf_path):
     """删除PDF文件"""
