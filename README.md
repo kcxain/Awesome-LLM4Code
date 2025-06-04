@@ -1,3 +1,4 @@
+# Awesome-LLM4Code
 
 
 ## 2025-06 
@@ -24,8 +25,6 @@
 - [RMoA: Optimizing Mixture-of-Agents through Diversity Maximization and Residual Compensation](archive/2025-06/0604.md#RMoA-Optimizing-Mixture-of-Agents-through-Diversity-Maximization-and-Residual-Compensation)
 - [SwiftEval: Developing a Language-Specific Benchmark for LLM-generated Code Evaluation](archive/2025-06/0604.md#SwiftEval-Developing-a-Language-Specific-Benchmark-for-LLM-generated-Code-Evaluation)
 - [A Reward-driven Automated Webshell Malicious-code Generator for Red-teaming](archive/2025-06/0604.md#A-Reward-driven-Automated-Webshell-Malicious-code-Generator-for-Red-teaming)
-# Awesome-LLM4Code
-
 
 
 ## 2025-05 
