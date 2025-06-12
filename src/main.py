@@ -214,10 +214,14 @@ def write_to_conclusion(papers_analyses):
         if ym_title.strip() in readme_content:
             # 找到年月标题的位置
             title_pos = readme_content.find(ym_title.strip())
-            readme_content = readme_content[:title_pos + len(ym_title)] + new_content + readme_content[title_pos + len(ym_title):]
+            readme_content = ''.join([
+                readme_content[:title_pos + len(ym_title)],
+                new_content,
+                readme_content[title_pos + len(ym_title):]
+            ])
         else:
             # 如果没有年月标题则插入到开头
-            readme_content = ym_title + new_content + readme_content
+            readme_content = ''.join([ym_title, new_content, readme_content])
             
         # 写入更新后的内容
         with open(readme_path, 'w', encoding='utf-8') as readme:
