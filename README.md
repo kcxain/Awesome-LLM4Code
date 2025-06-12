@@ -1,9 +1,43 @@
 # Awesome-LLM4Code
 
 
+
 ## 2025-06 
 
-### 0528-0604
+##### 0605-0612
+
+- [Edit Flows: Flow Matching with Edit Operations](archive/2025-06/0612.md#Edit-Flows-Flow-Matching-with-Edit-Operations)
+- [SWE-Flow: Synthesizing Software Engineering Data in a Test-Driven Manner](archive/2025-06/0612.md#SWE-Flow-Synthesizing-Software-Engineering-Data-in-a-Test-Driven-Manner)
+- [Draft-based Approximate Inference for LLMs](archive/2025-06/0612.md#Draft-based-Approximate-Inference-for-LLMs)
+- [Understanding Software Engineering Agents Through the Lens of Traceability: An Empirical Study](archive/2025-06/0612.md#Understanding-Software-Engineering-Agents-Through-the-Lens-of-Traceability-An-Empirical-Study)
+- [Repeton: Structured Bug Repair with ReAct-Guided Patch-and-Test Cycles](archive/2025-06/0612.md#Repeton-Structured-Bug-Repair-with-ReAct-Guided-Patch-and-Test-Cycles)
+- [Worst-Case Symbolic Constraints Analysis and Generalisation with Large Language Models](archive/2025-06/0612.md#Worst-Case-Symbolic-Constraints-Analysis-and-Generalisation-with-Large-Language-Models)
+- [AutoSDT: Scaling Data-Driven Discovery Tasks Toward Open Co-Scientists](archive/2025-06/0612.md#AutoSDT-Scaling-Data-Driven-Discovery-Tasks-Toward-Open-Co-Scientists)
+- [SlideCoder: Layout-aware RAG-enhanced Hierarchical Slide Generation from Design](archive/2025-06/0612.md#SlideCoder-Layout-aware-RAG-enhanced-Hierarchical-Slide-Generation-from-Design)
+- [ProtocolLLM: RTL Benchmark for SystemVerilog Generation of Communication Protocols](archive/2025-06/0612.md#ProtocolLLM-RTL-Benchmark-for-SystemVerilog-Generation-of-Communication-Protocols)
+- [Learning to Focus: Causal Attention Distillation via Gradient-Guided Token Pruning](archive/2025-06/0612.md#Learning-to-Focus-Causal-Attention-Distillation-via-Gradient-Guided-Token-Pruning)
+- [LiteVLM: A Low-Latency Vision-Language Model Inference Pipeline for Resource-Constrained Environments](archive/2025-06/0612.md#LiteVLM-A-Low-Latency-Vision-Language-Model-Inference-Pipeline-for-Resource-Constrained-Environments)
+- [VeriLoC: Line-of-Code Level Prediction of Hardware Design Quality from Verilog Code](archive/2025-06/0612.md#VeriLoC-Line-of-Code-Level-Prediction-of-Hardware-Design-Quality-from-Verilog-Code)
+- [Break-The-Chain: Reasoning Failures in LLMs via Adversarial Prompting in Code Generation](archive/2025-06/0612.md#Break-The-Chain-Reasoning-Failures-in-LLMs-via-Adversarial-Prompting-in-Code-Generation)
+- [KnowCoder-V2: Deep Knowledge Analysis](archive/2025-06/0612.md#KnowCoder-V2-Deep-Knowledge-Analysis)
+- [Can LLMs Generate Reliable Test Case Generators? A Study on Competition-Level Programming Problems](archive/2025-06/0612.md#Can-LLMs-Generate-Reliable-Test-Case-Generators-A-Study-on-Competition-Level-Programming-Problems)
+- [Training-Free Tokenizer Transplantation via Orthogonal Matching Pursuit](archive/2025-06/0612.md#Training-Free-Tokenizer-Transplantation-via-Orthogonal-Matching-Pursuit)
+- [KramaBench: A Benchmark for AI Systems on Data-to-Insight Pipelines over Data Lakes](archive/2025-06/0612.md#KramaBench-A-Benchmark-for-AI-Systems-on-Data-to-Insight-Pipelines-over-Data-Lakes)
+- [DesignBench: A Comprehensive Benchmark for MLLM-based Front-end Code Generation](archive/2025-06/0612.md#DesignBench-A-Comprehensive-Benchmark-for-MLLM-based-Front-end-Code-Generation)
+- [Can Theoretical Physics Research Benefit from Language Agents?](archive/2025-06/0612.md#Can-Theoretical-Physics-Research-Benefit-from-Language-Agents)
+- [Table-r1: Self-supervised and Reinforcement Learning for Program-based Table Reasoning in Small Language Models](archive/2025-06/0612.md#Table-r1-Self-supervised-and-Reinforcement-Learning-for-Program-based-Table-Reasoning-in-Small-Language-Models)
+- [Reinforcing Code Generation: Improving Text-to-SQL with Execution-Based Learning](archive/2025-06/0612.md#Reinforcing-Code-Generation-Improving-Text-to-SQL-with-Execution-Based-Learning)
+- [CP-Bench: Evaluating Large Language Models for Constraint Modelling](archive/2025-06/0612.md#CP-Bench-Evaluating-Large-Language-Models-for-Constraint-Modelling)
+- [SafeGenBench: A Benchmark Framework for Security Vulnerability Detection in LLM-Generated Code](archive/2025-06/0612.md#SafeGenBench-A-Benchmark-Framework-for-Security-Vulnerability-Detection-in-LLM-Generated-Code)
+- [Deployability-Centric Infrastructure-as-Code Generation: An LLM-based Iterative Framework](archive/2025-06/0612.md#Deployability-Centric-Infrastructure-as-Code-Generation-An-LLM-based-Iterative-Framework)
+- [Toward Greater Autonomy in Materials Discovery Agents: Unifying Planning, Physics, and Scientists](archive/2025-06/0612.md#Toward-Greater-Autonomy-in-Materials-Discovery-Agents-Unifying-Planning-Physics-and-Scientists)
+- [ScaleRTL: Scaling LLMs with Reasoning Data and Test-Time Compute for Accurate RTL Code Generation](archive/2025-06/0612.md#ScaleRTL-Scaling-LLMs-with-Reasoning-Data-and-Test-Time-Compute-for-Accurate-RTL-Code-Generation)
+- [ICPC-Eval: Probing the Frontiers of LLM Reasoning with Competitive Programming Contests](archive/2025-06/0612.md#ICPC-Eval-Probing-the-Frontiers-of-LLM-Reasoning-with-Competitive-Programming-Contests)
+- [Accelerated Test-Time Scaling with Model-Free Speculative Sampling](archive/2025-06/0612.md#Accelerated-Test-Time-Scaling-with-Model-Free-Speculative-Sampling)
+- [Agents of Change: Self-Evolving LLM Agents for Strategic Planning](archive/2025-06/0612.md#Agents-of-Change-Self-Evolving-LLM-Agents-for-Strategic-Planning)
+- [Demonstrations of Integrity Attacks in Multi-Agent Systems](archive/2025-06/0612.md#Demonstrations-of-Integrity-Attacks-in-Multi-Agent-Systems)
+- [hdl2v: A Code Translation Dataset for Enhanced LLM Verilog Generation](archive/2025-06/0612.md#hdl2v-A-Code-Translation-Dataset-for-Enhanced-LLM-Verilog-Generation)
+# 0528-0604
 
 - [Co-Evolving LLM Coder and Unit Tester via Reinforcement Learning](archive/2025-06/0604.md#Co-Evolving-LLM-Coder-and-Unit-Tester-via-Reinforcement-Learning)
 - [Adaptive Graph Pruning for Multi-Agent Communication](archive/2025-06/0604.md#Adaptive-Graph-Pruning-for-Multi-Agent-Communication)
