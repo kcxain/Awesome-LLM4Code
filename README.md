@@ -4,7 +4,7 @@
 
 ## 2025-06 
 
-##### 0605-0612
+### 0605-0612
 
 - [Edit Flows: Flow Matching with Edit Operations](archive/2025-06/0612.md#Edit-Flows-Flow-Matching-with-Edit-Operations)
 - [SWE-Flow: Synthesizing Software Engineering Data in a Test-Driven Manner](archive/2025-06/0612.md#SWE-Flow-Synthesizing-Software-Engineering-Data-in-a-Test-Driven-Manner)
@@ -37,7 +37,8 @@
 - [Agents of Change: Self-Evolving LLM Agents for Strategic Planning](archive/2025-06/0612.md#Agents-of-Change-Self-Evolving-LLM-Agents-for-Strategic-Planning)
 - [Demonstrations of Integrity Attacks in Multi-Agent Systems](archive/2025-06/0612.md#Demonstrations-of-Integrity-Attacks-in-Multi-Agent-Systems)
 - [hdl2v: A Code Translation Dataset for Enhanced LLM Verilog Generation](archive/2025-06/0612.md#hdl2v-A-Code-Translation-Dataset-for-Enhanced-LLM-Verilog-Generation)
-# 0528-0604
+
+### 0528-0604
 
 - [Co-Evolving LLM Coder and Unit Tester via Reinforcement Learning](archive/2025-06/0604.md#Co-Evolving-LLM-Coder-and-Unit-Tester-via-Reinforcement-Learning)
 - [Adaptive Graph Pruning for Multi-Agent Communication](archive/2025-06/0604.md#Adaptive-Graph-Pruning-for-Multi-Agent-Communication)
