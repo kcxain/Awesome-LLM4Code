@@ -59,7 +59,7 @@ def get_recent_papers(categories, max_results=MAX_PAPERS, keywords=KEYWORDS):
 
     # 类别部分
     category_query = " OR ".join([f"cat:{cat}" for cat in categories])
-    date_range = f"submittedDate:[{start_date}000000 TO {end_date}235959]"
+    date_range = f"announcedDate:[{start_date}000000 TO {end_date}235959]"
 
     # 关键词部分，支持title/abstract字段
     keyword_query = " OR ".join([f'ti:"{kw}" OR abs:"{kw}"' for kw in keywords])
@@ -109,7 +109,7 @@ def analyze_paper(pdf_path, paper):
         3. 主要贡献和创新点，动机和解决的问题
         4. 方法，具体流程
         5. 实验结果，包括数据集，实验设置，实验结果，实验结论
-        6. 方法可以用在其它什么领域，如代码生成（尤其是Verilog代码生成），代码修复，思维链推理？
+        6. 方法可以用在其它什么领域，如代码生成（尤其是Verilog代码生成），代码修复，CoT？
         
         请使用中文回答，并以纯文本，分自然段格式输出
         """
@@ -183,8 +183,8 @@ def write_to_conclusion(papers_analyses):
         for paper, analysis in papers_analyses:
             author_names = [author.name for author in paper.authors]
             f.write(f"### {paper.title}\n\n")
-            f.write(f"**作者**: {', '.join(author_names)}\n\n")
-            f.write(f"**日期**: {paper.published.strftime('%Y-%m-%d')}\n\n")
+            f.write(f"**作者**: {', '.join(author_names)}\n")
+            f.write(f"**日期**: {paper.published.strftime('%Y-%m-%d')}\n")
             f.write(f"**链接**: {paper.entry_id}\n\n")
             f.write(f"{analysis}\n\n")
             f.write("---\n\n")
