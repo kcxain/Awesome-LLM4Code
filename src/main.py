@@ -59,7 +59,7 @@ def get_recent_papers(categories, max_results=MAX_PAPERS, keywords=KEYWORDS):
 
     # 类别部分
     category_query = " OR ".join([f"cat:{cat}" for cat in categories])
-    date_range = f"announcedDate:[{start_date}000000 TO {end_date}235959]"
+    date_range = f"submittedDate:[{start_date}000000 TO {end_date}235959]"
 
     # 关键词部分，支持title/abstract字段
     keyword_query = " OR ".join([f'ti:"{kw}" OR abs:"{kw}"' for kw in keywords])
