@@ -1,11 +1,33 @@
 # Awesome-LLM4Code
 
 
-
-
 ## 2025-06 
 
-##### 0612-0619
+### 0619-0626
+
+- [DiffuCoder: Understanding and Improving Masked Diffusion Models for Code Generation](archive/2025-06/0626.md#DiffuCoder-Understanding-and-Improving-Masked-Diffusion-Models-for-Code-Generation)
+- [Large Language Model-Driven Code Compliance Checking in Building Information Modeling](archive/2025-06/0626.md#Large-Language-Model-Driven-Code-Compliance-Checking-in-Building-Information-Modeling)
+- [ReCode: Updating Code API Knowledge with Reinforcement Learning](archive/2025-06/0626.md#ReCode-Updating-Code-API-Knowledge-with-Reinforcement-Learning)
+- [SV-LLM: An Agentic Approach for SoC Security Verification using Large Language Models](archive/2025-06/0626.md#SV-LLM-An-Agentic-Approach-for-SoC-Security-Verification-using-Large-Language-Models)
+- [Language Modeling by Language Models](archive/2025-06/0626.md#Language-Modeling-by-Language-Models)
+- [Zero-Shot Attribution for Large Language Models: A Distribution Testing Approach](archive/2025-06/0626.md#Zero-Shot-Attribution-for-Large-Language-Models-A-Distribution-Testing-Approach)
+- [SACL: Understanding and Combating Textual Bias in Code Retrieval with Semantic-Augmented Reranking and Localization](archive/2025-06/0626.md#SACL-Understanding-and-Combating-Textual-Bias-in-Code-Retrieval-with-Semantic-Augmented-Reranking-and-Localization)
+- [QHackBench: Benchmarking Large Language Models for Quantum Code Generation Using PennyLane Hackathon Challenges](archive/2025-06/0626.md#QHackBench-Benchmarking-Large-Language-Models-for-Quantum-Code-Generation-Using-PennyLane-Hackathon-Challenges)
+- [Scaling Speculative Decoding with Lookahead Reasoning](archive/2025-06/0626.md#Scaling-Speculative-Decoding-with-Lookahead-Reasoning)
+- [Why Do Open-Source LLMs Struggle with Data Analysis? A Systematic Empirical Study](archive/2025-06/0626.md#Why-Do-Open-Source-LLMs-Struggle-with-Data-Analysis-A-Systematic-Empirical-Study)
+- [From Reproduction to Replication: Evaluating Research Agents with Progressive Code Masking](archive/2025-06/0626.md#From-Reproduction-to-Replication-Evaluating-Research-Agents-with-Progressive-Code-Masking)
+- [Skywork-SWE: Unveiling Data Scaling Laws for Software Engineering in LLMs](archive/2025-06/0626.md#Skywork-SWE-Unveiling-Data-Scaling-Laws-for-Software-Engineering-in-LLMs)
+- [Steering Conceptual Bias via Transformer Latent-Subspace Activation](archive/2025-06/0626.md#Steering-Conceptual-Bias-via-Transformer-Latent-Subspace-Activation)
+- [LLMs on a Budget? Say HOLA](archive/2025-06/0626.md#LLMs-on-a-Budget-Say-HOLA)
+- [The Debugging Decay Index: Rethinking Debugging Strategies for Code LLMs](archive/2025-06/0626.md#The-Debugging-Decay-Index-Rethinking-Debugging-Strategies-for-Code-LLMs)
+- [Use Property-Based Testing to Bridge LLM Code Generation and Validation](archive/2025-06/0626.md#Use-Property-Based-Testing-to-Bridge-LLM-Code-Generation-and-Validation)
+- [RoboTwin 2.0: A Scalable Data Generator and Benchmark with Strong Domain Randomization for Robust Bimanual Robotic Manipulation](archive/2025-06/0626.md#RoboTwin-20-A-Scalable-Data-Generator-and-Benchmark-with-Strong-Domain-Randomization-for-Robust-Bimanual-Robotic-Manipulation)
+- [Tower+: Bridging Generality and Translation Specialization in Multilingual LLMs](archive/2025-06/0626.md#Tower-Bridging-Generality-and-Translation-Specialization-in-Multilingual-LLMs)
+- [TeXpert: A Multi-Level Benchmark for Evaluating LaTeX Code Generation by LLMs](archive/2025-06/0626.md#TeXpert-A-Multi-Level-Benchmark-for-Evaluating-LaTeX-Code-Generation-by-LLMs)
+- [AI-Driven Tools in Modern Software Quality Assurance: An Assessment of Benefits, Challenges, and Future Directions](archive/2025-06/0626.md#AI-Driven-Tools-in-Modern-Software-Quality-Assurance-An-Assessment-of-Benefits-Challenges-and-Future-Directions)
+- [LMR-BENCH: Evaluating LLM Agent's Ability on Reproducing Language Modeling Research](archive/2025-06/0626.md#LMR-BENCH-Evaluating-LLM-Agents-Ability-on-Reproducing-Language-Modeling-Research)
+
+### 0612-0619
 
 - [Massive Supervised Fine-tuning Experiments Reveal How Data, Layer, and Training Factors Shape LLM Alignment Quality](archive/2025-06/0619.md#Massive-Supervised-Fine-tuning-Experiments-Reveal-How-Data-Layer-and-Training-Factors-Shape-LLM-Alignment-Quality)
 - [StreetLens: Enabling Human-Centered AI Agents for Neighborhood Assessment from Street View Imagery](archive/2025-06/0619.md#StreetLens-Enabling-Human-Centered-AI-Agents-for-Neighborhood-Assessment-from-Street-View-Imagery)
@@ -26,7 +48,8 @@
 - [LLM-as-a-Judge for Reference-less Automatic Code Validation and Refinement for Natural Language to Bash in IT Automation](archive/2025-06/0619.md#LLM-as-a-Judge-for-Reference-less-Automatic-Code-Validation-and-Refinement-for-Natural-Language-to-Bash-in-IT-Automation)
 - [AutoMind: Adaptive Knowledgeable Agent for Automated Data Science](archive/2025-06/0619.md#AutoMind-Adaptive-Knowledgeable-Agent-for-Automated-Data-Science)
 - [Specification and Evaluation of Multi-Agent LLM Systems -- Prototype and Cybersecurity Applications](archive/2025-06/0619.md#Specification-and-Evaluation-of-Multi-Agent-LLM-Systems----Prototype-and-Cybersecurity-Applications)
-# 0605-0612
+
+### 0605-0612
 
 - [Edit Flows: Flow Matching with Edit Operations](archive/2025-06/0612.md#Edit-Flows-Flow-Matching-with-Edit-Operations)
 - [SWE-Flow: Synthesizing Software Engineering Data in a Test-Driven Manner](archive/2025-06/0612.md#SWE-Flow-Synthesizing-Software-Engineering-Data-in-a-Test-Driven-Manner)

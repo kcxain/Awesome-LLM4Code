@@ -7,5 +7,7 @@ requires-python = ">=3.13"
 dependencies = [
     "arxiv>=2.2.0",
     "dotenv>=0.9.9",
+    "httpx>=0.28.1",
     "openai>=1.91.0",
+    "socksio>=1.0.0",
 ]
