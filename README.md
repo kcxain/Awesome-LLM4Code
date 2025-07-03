@@ -1,5 +1,28 @@
 # Awesome-LLM4Code
 
+## 2025-07 
+
+### 0626-0703
+
+- [The Anatomy of Evidence: An Investigation Into Explainable ICD Coding](archive/2025-07/0703.md#The-Anatomy-of-Evidence-An-Investigation-Into-Explainable-ICD-Coding)
+- [LogitSpec: Accelerating Retrieval-based Speculative Decoding via Next Next Token Speculation](archive/2025-07/0703.md#LogitSpec-Accelerating-Retrieval-based-Speculative-Decoding-via-Next-Next-Token-Speculation)
+- [LLM-based Realistic Safety-Critical Driving Video Generation](archive/2025-07/0703.md#LLM-based-Realistic-Safety-Critical-Driving-Video-Generation)
+- [Echoes of AI: Investigating the Downstream Effects of AI Assistants on Software Maintainability](archive/2025-07/0703.md#Echoes-of-AI-Investigating-the-Downstream-Effects-of-AI-Assistants-on-Software-Maintainability)
+- [Cognitive Load-Aware Inference: A Neuro-Symbolic Framework for Optimizing the Token Economy of Large Language Models](archive/2025-07/0703.md#Cognitive-Load-Aware-Inference-A-Neuro-Symbolic-Framework-for-Optimizing-the-Token-Economy-of-Large-Language-Models)
+- [iPanda: An Intelligent Protocol Testing and Debugging Agent for Conformance Testing](archive/2025-07/0703.md#iPanda-An-Intelligent-Protocol-Testing-and-Debugging-Agent-for-Conformance-Testing)
+- [An AST-guided LLM Approach for SVRF Code Synthesis](archive/2025-07/0703.md#An-AST-guided-LLM-Approach-for-SVRF-Code-Synthesis)
+- [Teaching Programming in the Age of Generative AI: Insights from Literature, Pedagogical Proposals, and Student Perspectives](archive/2025-07/0703.md#Teaching-Programming-in-the-Age-of-Generative-AI-Insights-from-Literature-Pedagogical-Proposals-and-Student-Perspectives)
+- [VoyagerVision: Investigating the Role of Multi-modal Information for Open-ended Learning Systems](archive/2025-07/0703.md#VoyagerVision-Investigating-the-Role-of-Multi-modal-Information-for-Open-ended-Learning-Systems)
+- [Smaller = Weaker? Benchmarking Robustness of Quantized LLMs in Code Generation](archive/2025-07/0703.md#Smaller--Weaker-Benchmarking-Robustness-of-Quantized-LLMs-in-Code-Generation)
+- [Beyond Code: The Multidimensional Impacts of Large Language Models in Software Development](archive/2025-07/0703.md#Beyond-Code-The-Multidimensional-Impacts-of-Large-Language-Models-in-Software-Development)
+- [P4OMP: Retrieval-Augmented Prompting for OpenMP Parallelism in Serial Code](archive/2025-07/0703.md#P4OMP-Retrieval-Augmented-Prompting-for-OpenMP-Parallelism-in-Serial-Code)
+- [VOCABTRIM: Vocabulary Pruning for Efficient Speculative Decoding in LLMs](archive/2025-07/0703.md#VOCABTRIM-Vocabulary-Pruning-for-Efficient-Speculative-Decoding-in-LLMs)
+- [QuickSilver -- Speeding up LLM Inference through Dynamic Token Halting, KV Skipping, Contextual Token Fusion, and Adaptive Matryoshka Quantization](archive/2025-07/0703.md#QuickSilver----Speeding-up-LLM-Inference-through-Dynamic-Token-Halting-KV-Skipping-Contextual-Token-Fusion-and-Adaptive-Matryoshka-Quantization)
+- [Concept-Level AI for Telecom: Moving Beyond Large Language Models](archive/2025-07/0703.md#Concept-Level-AI-for-Telecom-Moving-Beyond-Large-Language-Models)
+- [Exploring Modularity of Agentic Systems for Drug Discovery](archive/2025-07/0703.md#Exploring-Modularity-of-Agentic-Systems-for-Drug-Discovery)
+- [Training Language Model to Critique for Better Refinement](archive/2025-07/0703.md#Training-Language-Model-to-Critique-for-Better-Refinement)
+- [Estimating Correctness Without Oracles in LLM-Based Code Generation](archive/2025-07/0703.md#Estimating-Correctness-Without-Oracles-in-LLM-Based-Code-Generation)
+
 
 ## 2025-06 
 
