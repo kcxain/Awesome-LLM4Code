@@ -1,6 +1,30 @@
 # Awesome-LLM4Code
 
+
 ## 2025-07 
+
+### 0703-0710
+
+- [Rethinking Verification for LLM Code Generation: From Generation to Testing](archive/2025-07/0710.md#Rethinking-Verification-for-LLM-Code-Generation-From-Generation-to-Testing)
+- [Text to model via SysML: Automated generation of dynamical system computational models from unstructured natural language text via enhanced System Modeling Language diagrams](archive/2025-07/0710.md#Text-to-model-via-SysML-Automated-generation-of-dynamical-system-computational-models-from-unstructured-natural-language-text-via-enhanced-System-Modeling-Language-diagrams)
+- [Foundation Model Self-Play: Open-Ended Strategy Innovation via Foundation Models](archive/2025-07/0710.md#Foundation-Model-Self-Play-Open-Ended-Strategy-Innovation-via-Foundation-Models)
+- [A Semantic Parsing Framework for End-to-End Time Normalization](archive/2025-07/0710.md#A-Semantic-Parsing-Framework-for-End-to-End-Time-Normalization)
+- [Agent KB: Leveraging Cross-Domain Experience for Agentic Problem Solving](archive/2025-07/0710.md#Agent-KB-Leveraging-Cross-Domain-Experience-for-Agentic-Problem-Solving)
+- [Coding Triangle: How Does Large Language Model Understand Code?](archive/2025-07/0710.md#Coding-Triangle-How-Does-Large-Language-Model-Understand-Code)
+- [CogniSQL-R1-Zero: Lightweight Reinforced Reasoning for Efficient SQL Generation](archive/2025-07/0710.md#CogniSQL-R1-Zero-Lightweight-Reinforced-Reasoning-for-Efficient-SQL-Generation)
+- [Learn Globally, Speak Locally: Bridging the Gaps in Multilingual Reasoning](archive/2025-07/0710.md#Learn-Globally-Speak-Locally-Bridging-the-Gaps-in-Multilingual-Reasoning)
+- [ArtifactsBench: Bridging the Visual-Interactive Gap in LLM Code Generation Evaluation](archive/2025-07/0710.md#ArtifactsBench-Bridging-the-Visual-Interactive-Gap-in-LLM-Code-Generation-Evaluation)
+- [ChipSeek-R1: Generating Human-Surpassing RTL with LLM via Hierarchical Reward-Driven Reinforcement Learning](archive/2025-07/0710.md#ChipSeek-R1-Generating-Human-Surpassing-RTL-with-LLM-via-Hierarchical-Reward-Driven-Reinforcement-Learning)
+- [A Technical Survey of Reinforcement Learning Techniques for Large Language Models](archive/2025-07/0710.md#A-Technical-Survey-of-Reinforcement-Learning-Techniques-for-Large-Language-Models)
+- [Is It Time To Treat Prompts As Code? A Multi-Use Case Study For Prompt Optimization Using DSPy](archive/2025-07/0710.md#Is-It-Time-To-Treat-Prompts-As-Code-A-Multi-Use-Case-Study-For-Prompt-Optimization-Using-DSPy)
+- [EvoAgentX: An Automated Framework for Evolving Agentic Workflows](archive/2025-07/0710.md#EvoAgentX-An-Automated-Framework-for-Evolving-Agentic-Workflows)
+- [CoreCodeBench: A Configurable Multi-Scenario Repository-Level Benchmark](archive/2025-07/0710.md#CoreCodeBench-A-Configurable-Multi-Scenario-Repository-Level-Benchmark)
+- [Discovering Algorithms with Computational Language Processing](archive/2025-07/0710.md#Discovering-Algorithms-with-Computational-Language-Processing)
+- [LLM Hypnosis: Exploiting User Feedback for Unauthorized Knowledge Injection to All Users](archive/2025-07/0710.md#LLM-Hypnosis-Exploiting-User-Feedback-for-Unauthorized-Knowledge-Injection-to-All-Users)
+- [OmniDraft: A Cross-vocabulary, Online Adaptive Drafter for On-device Speculative Decoding](archive/2025-07/0710.md#OmniDraft-A-Cross-vocabulary-Online-Adaptive-Drafter-for-On-device-Speculative-Decoding)
+- [FlowSpec: Continuous Pipelined Speculative Decoding for Efficient Distributed LLM Inference](archive/2025-07/0710.md#FlowSpec-Continuous-Pipelined-Speculative-Decoding-for-Efficient-Distributed-LLM-Inference)
+- [Efficient Code LLM Training via Distribution-Consistent and Diversity-Aware Data Selection](archive/2025-07/0710.md#Efficient-Code-LLM-Training-via-Distribution-Consistent-and-Diversity-Aware-Data-Selection)
+- [CORE: Benchmarking LLMs Code Reasoning Capabilities through Static Analysis Tasks](archive/2025-07/0710.md#CORE-Benchmarking-LLMs-Code-Reasoning-Capabilities-through-Static-Analysis-Tasks)
 
 ### 0626-0703
 
