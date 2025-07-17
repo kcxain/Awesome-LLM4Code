@@ -1,7 +1,29 @@
 # Awesome-LLM4Code
 
 
+
 ## 2025-07 
+
+## 0710-0717
+
+- [GitChameleon: Evaluating AI Code Generation Against Python Library Version Incompatibilities](archive/2025-07/0717.md#GitChameleon-Evaluating-AI-Code-Generation-Against-Python-Library-Version-Incompatibilities)
+- [Chain-of-Descriptions: Improving Code LLMs for VHDL Code Generation and Summarization](archive/2025-07/0717.md#Chain-of-Descriptions-Improving-Code-LLMs-for-VHDL-Code-Generation-and-Summarization)
+- [MERA Code: A Unified Framework for Evaluating Code Generation Across Tasks](archive/2025-07/0717.md#MERA-Code-A-Unified-Framework-for-Evaluating-Code-Generation-Across-Tasks)
+- [ExpliCIT-QA: Explainable Code-Based Image Table Question Answering](archive/2025-07/0717.md#ExpliCIT-QA-Explainable-Code-Based-Image-Table-Question-Answering)
+- [MetaLint: Generalizable Idiomatic Code Quality Analysis through Instruction-Following and Easy-to-Hard Generalization](archive/2025-07/0717.md#MetaLint-Generalizable-Idiomatic-Code-Quality-Analysis-through-Instruction-Following-and-Easy-to-Hard-Generalization)
+- [The Devil behind the mask: An emergent safety vulnerability of Diffusion LLMs](archive/2025-07/0717.md#The-Devil-behind-the-mask-An-emergent-safety-vulnerability-of-Diffusion-LLMs)
+- [Function-to-Style Guidance of LLMs for Code Translation](archive/2025-07/0717.md#Function-to-Style-Guidance-of-LLMs-for-Code-Translation)
+- [CodeJudgeBench: Benchmarking LLM-as-a-Judge for Coding Tasks](archive/2025-07/0717.md#CodeJudgeBench-Benchmarking-LLM-as-a-Judge-for-Coding-Tasks)
+- [CodeAssistBench (CAB): Dataset & Benchmarking for Multi-turn Chat-Based Code Assistance](archive/2025-07/0717.md#CodeAssistBench-CAB-Dataset--Benchmarking-for-Multi-turn-Chat-Based-Code-Assistance)
+- [A Code Comprehension Benchmark for Large Language Models for Code](archive/2025-07/0717.md#A-Code-Comprehension-Benchmark-for-Large-Language-Models-for-Code)
+- [Turning the Tide: Repository-based Code Reflection](archive/2025-07/0717.md#Turning-the-Tide-Repository-based-Code-Reflection)
+- [A Mixture of Linear Corrections Generates Secure Code](archive/2025-07/0717.md#A-Mixture-of-Linear-Corrections-Generates-Secure-Code)
+- [OpenCodeReasoning-II: A Simple Test Time Scaling Approach via Self-Critique](archive/2025-07/0717.md#OpenCodeReasoning-II-A-Simple-Test-Time-Scaling-Approach-via-Self-Critique)
+- [On Evaluating Performance of LLM Inference Serving Systems](archive/2025-07/0717.md#On-Evaluating-Performance-of-LLM-Inference-Serving-Systems)
+- [BlockFFN: Towards End-Side Acceleration-Friendly Mixture-of-Experts with Chunk-Level Activation Sparsity](archive/2025-07/0717.md#BlockFFN-Towards-End-Side-Acceleration-Friendly-Mixture-of-Experts-with-Chunk-Level-Activation-Sparsity)
+- [Multilingual Multimodal Software Developer for Code Generation](archive/2025-07/0717.md#Multilingual-Multimodal-Software-Developer-for-Code-Generation)
+- [Agentic Large Language Models for Conceptual Systems Engineering and Design](archive/2025-07/0717.md#Agentic-Large-Language-Models-for-Conceptual-Systems-Engineering-and-Design)
+- [Automating MD simulations for Proteins using Large language Models: NAMD-Agent](archive/2025-07/0717.md#Automating-MD-simulations-for-Proteins-using-Large-language-Models-NAMD-Agent)
 
 ### 0703-0710
 
