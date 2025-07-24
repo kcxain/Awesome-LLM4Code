@@ -2,7 +2,31 @@
 
 ## 2025-07 
 
-## 0710-0717
+### 0717-0724
+
+- [Megrez2 Technical Report](archive/2025-07/0724.md#Megrez2-Technical-Report)
+- [Who Attacks, and Why? Using LLMs to Identify Negative Campaigning in 18M Tweets across 19 Countries](archive/2025-07/0724.md#Who-Attacks-and-Why-Using-LLMs-to-Identify-Negative-Campaigning-in-18M-Tweets-across-19-Countries)
+- [Can One Domain Help Others? A Data-Centric Study on Multi-Domain Reasoning via Reinforcement Learning](archive/2025-07/0724.md#Can-One-Domain-Help-Others-A-Data-Centric-Study-on-Multi-Domain-Reasoning-via-Reinforcement-Learning)
+- [Investigating Training Data Detection in AI Coders](archive/2025-07/0724.md#Investigating-Training-Data-Detection-in-AI-Coders)
+- [EarthLink: Interpreting Climate Signals with Self-Evolving AI Agents](archive/2025-07/0724.md#EarthLink-Interpreting-Climate-Signals-with-Self-Evolving-AI-Agents)
+- [ACT: Bridging the Gap in Code Translation through Synthetic Data Generation & Adaptive Training](archive/2025-07/0724.md#ACT-Bridging-the-Gap-in-Code-Translation-through-Synthetic-Data-Generation--Adaptive-Training)
+- [LOCOFY Large Design Models -- Design to code conversion solution](archive/2025-07/0724.md#LOCOFY-Large-Design-Models----Design-to-code-conversion-solution)
+- [Compositional Coordination for Multi-Robot Teams with Large Language Models](archive/2025-07/0724.md#Compositional-Coordination-for-Multi-Robot-Teams-with-Large-Language-Models)
+- [3LM: Bridging Arabic, STEM, and Code through Benchmarking](archive/2025-07/0724.md#3LM-Bridging-Arabic-STEM-and-Code-through-Benchmarking)
+- [Stabilizing Knowledge, Promoting Reasoning: Dual-Token Constraints for RLVR](archive/2025-07/0724.md#Stabilizing-Knowledge-Promoting-Reasoning-Dual-Token-Constraints-for-RLVR)
+- [Data Mixing Agent: Learning to Re-weight Domains for Continual Pre-training](archive/2025-07/0724.md#Data-Mixing-Agent-Learning-to-Re-weight-Domains-for-Continual-Pre-training)
+- [ASPERA: A Simulated Environment to Evaluate Planning for Complex Action Execution](archive/2025-07/0724.md#ASPERA-A-Simulated-Environment-to-Evaluate-Planning-for-Complex-Action-Execution)
+- [SimdBench: Benchmarking Large Language Models for SIMD-Intrinsic Code Generation](archive/2025-07/0724.md#SimdBench-Benchmarking-Large-Language-Models-for-SIMD-Intrinsic-Code-Generation)
+- [Survey of GenAI for Automotive Software Development: From Requirements to Executable Code](archive/2025-07/0724.md#Survey-of-GenAI-for-Automotive-Software-Development-From-Requirements-to-Executable-Code)
+- [Doc2Chart: Intent-Driven Zero-Shot Chart Generation from Documents](archive/2025-07/0724.md#Doc2Chart-Intent-Driven-Zero-Shot-Chart-Generation-from-Documents)
+- [Mind the Gap: A Review of Arabic Post-Training Datasets and Their Limitations](archive/2025-07/0724.md#Mind-the-Gap-A-Review-of-Arabic-Post-Training-Datasets-and-Their-Limitations)
+- [Exploring Human-AI Complementarity in CPS Diagnosis Using Unimodal and Multimodal BERT Models](archive/2025-07/0724.md#Exploring-Human-AI-Complementarity-in-CPS-Diagnosis-Using-Unimodal-and-Multimodal-BERT-Models)
+- [CUDA-L1: Improving CUDA Optimization via Contrastive Reinforcement Learning](archive/2025-07/0724.md#CUDA-L1-Improving-CUDA-Optimization-via-Contrastive-Reinforcement-Learning)
+- [Impact of Code Context and Prompting Strategies on Automated Unit Test Generation with Modern General-Purpose Large Language Models](archive/2025-07/0724.md#Impact-of-Code-Context-and-Prompting-Strategies-on-Automated-Unit-Test-Generation-with-Modern-General-Purpose-Large-Language-Models)
+- [Towards Formal Verification of LLM-Generated Code from Natural Language Prompts](archive/2025-07/0724.md#Towards-Formal-Verification-of-LLM-Generated-Code-from-Natural-Language-Prompts)
+- [MRT at IberLEF-2025 PRESTA Task: Maximizing Recovery from Tables with Multiple Steps](archive/2025-07/0724.md#MRT-at-IberLEF-2025-PRESTA-Task-Maximizing-Recovery-from-Tables-with-Multiple-Steps)
+ 
+### 0710-0717
 
 - [GitChameleon: Evaluating AI Code Generation Against Python Library Version Incompatibilities](archive/2025-07/0717.md#GitChameleon-Evaluating-AI-Code-Generation-Against-Python-Library-Version-Incompatibilities)
 - [Chain-of-Descriptions: Improving Code LLMs for VHDL Code Generation and Summarization](archive/2025-07/0717.md#Chain-of-Descriptions-Improving-Code-LLMs-for-VHDL-Code-Generation-and-Summarization)
