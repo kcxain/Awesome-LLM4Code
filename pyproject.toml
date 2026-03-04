@@ -9,5 +9,7 @@ dependencies = [
     "dotenv>=0.9.9",
     "httpx>=0.28.1",
     "openai>=1.91.0",
+    "pymupdf>=1.26.7",
+    "requests>=2.32.4",
     "socksio>=1.0.0",
 ]
